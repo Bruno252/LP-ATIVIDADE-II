@@ -9,8 +9,8 @@ float camiseta=50,calca=65,sapato=40;
 
 printf("Digite:\n");
 printf("1 | para Camiseta\n");
-printf("2 | calca\n");
-printf("3 | Sapato\n");
+printf("2 | para calca\n");
+printf("3 | para Sapato\n");
 printf("\nEscolha:");
 scanf("%d",&escolha);
 	
