@@ -8,21 +8,29 @@ int main() {
 
     do {
 
-        printf("\nDigite:\n");
+        printf("\n Digite:\n");
         printf("1 | Conversao de Celsius\n");
         printf("2 | Conversao de Farhrenheit\n");
-        printf("3 | conversao de Kelvin");
+        printf("3 | conversao de Kelvin\n");
+        printf("0 | para encerra o programa\n");
         printf("\nEscolha:");
         scanf("%d",&escolha);
-        
-        if(escolha==0){
-        
-        break;
-        
+
+        if(escolha==0) {
+            break;
+
         }
 
-        printf("\nValor");
-        scanf("%f",&valor);
+        if(escolha>3 || escolha<0) {
+        system("cls || clear");
+            printf("Escolha Invalida\n");
+
+        } else {
+
+            printf("\nValor");
+            scanf("%f",&valor);
+
+        }
 
         switch(escolha) {
 
@@ -58,12 +66,6 @@ int main() {
             printf("Fahrenheit:%.2f\n",fahre);
 
             break;
-            
-        default:
-
-            printf("Escolha Invalida");
-            break;
-
 
         }
     } while(escolha!=0);
